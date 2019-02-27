@@ -7,8 +7,26 @@ async function gcsbq (file, context) {
   const _schema = require(process.env.SCHEMA)
 
   const datasetId = process.env.DATASET
-  const tableId = process.env.TABLE
-
+  
+  var date = new Date();
+  var day = date.getDate();
+  
+  var dayStr = "" + day;
+  if (day < 10) {
+	dayStr = "0" + day
+  }
+  
+  var monthStr = "" + (date.getMonth()+1);
+  
+  if ((date.getMonth()+1) < 10) {
+	monthStr = "0" + monthStr
+  }
+  
+  var todayStr = date.getFullYear() + monthStr + dayStr;
+  
+  const tableId = (process.env.TABLE + '_' + todayStr);
+  console.log("table name: " + tableId);
+  
   const bigquery = new BigQuery()
 
   const storage = new Storage()
