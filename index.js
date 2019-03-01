@@ -30,11 +30,7 @@ async function gcsbq (file, context) {
   console.log("table name: " + tableId);
 
   const bigquery = new BigQuery()
-
   const storage = new Storage()
-
-
-
   const filename = storage.bucket(bucketName).file("logs/"+todayStr+"/*")
 
   /* Configure the load job and ignore values undefined in schema */
