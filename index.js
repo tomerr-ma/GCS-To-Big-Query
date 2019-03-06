@@ -45,12 +45,8 @@ async function gcsbq(file, context) {
 
     const tableId = (process.env.TABLE + '_' + todayStr);
     const bucketName = process.env.BUCKET_NAME
-
     const bigquery = new BigQuery()
-
     const storage = new Storage()
-
-
 
     const filename = storage.bucket(bucketName).file("logs/" + todayStr +
         "/*.log.gz")
