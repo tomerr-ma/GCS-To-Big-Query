@@ -4,7 +4,7 @@ BUCKET_NAME="cloudflare-ma"
 DATASET="cloudflare_logs"
 TABLE="cloudflare_moonactive_net"
 
-gcloud functions deploy gcsbq --project aviv-playground\
+gcloud functions deploy gcsbq \
     --runtime nodejs8 \
     --timeout 540 \
     --trigger-http \
