@@ -1,8 +1,8 @@
 #!/bin/sh
 
-BUCKET_NAME="MYBAUCKET"
-DATASET="MYDATASET"
-TABLE="cloudflare_logs"
+BUCKET_NAME="cloudflare-ma"
+DATASET="cloudflare_logs"
+TABLE="cloudflare_moonactive_net"
 
 gcloud functions deploy gcsbq --project aviv-playground\
     --runtime nodejs8 \
