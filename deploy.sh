@@ -2,7 +2,7 @@
 
 BUCKET_NAME="cloudflare-ma"
 DATASET="cloudflare_logs"
-TABLE="cloudflare_moonactive_net_"
+TABLE="cloudflare_moonactive_net"
 
 gcloud functions deploy gcsbq \
     --runtime nodejs8 \
