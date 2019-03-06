@@ -1,8 +1,8 @@
 #!/bin/sh
 
-BUCKET_NAME="my_cloudflarelogs_gcp_storage_bucket"
+BUCKET_NAME="cloudflare-ma"
 DATASET="cloudflare_logs"
-TABLE="cloudflare_logs"
+TABLE="cloudflare_moonactive_net_"
 
 gcloud functions deploy gcsbq \
     --runtime nodejs8 \
