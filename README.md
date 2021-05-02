@@ -19,4 +19,4 @@ sh ./deploy.sh
 ```
 
   
-*Note: You can also deploy this function locally using the same steps below. The only requirement is the [gcloud SDK](https://cloud.google.com/sdk/downloads).*#Test12
+*Note: You can also deploy this function locally using the same steps below. The only requirement is the [gcloud SDK](https://cloud.google.com/sdk/downloads).*#Test123
